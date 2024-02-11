@@ -4,12 +4,16 @@ import { h } from "vue";
 import Insta from "./Insta.vue";
 import Facebook from "./Facebook.vue";
 import LinkedIn from "./LinkedIn.vue";
+import Location from "./Location.vue";
+import Clock from "./Clock.vue";
 
 const customSvgNameToComponent = {
     // dribble: Dribble,
     facebook: Facebook,
     insta: Insta,
     linkedin: LinkedIn,
+    location: Location,
+    clock: Clock,
 };
 
 const customIcons = {

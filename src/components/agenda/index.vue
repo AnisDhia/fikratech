@@ -1,5 +1,8 @@
 <template>
     <section>
+        <v-row class="text-center">
+            <v-img src="@/assets/agenda/text.svg" max-height="150" class="d-md-none"></v-img>
+        </v-row>
         <v-row justify="center" align="center">
             <v-col class="text-center" cols="12" md="4">
                 <v-img src="@/assets/agenda/day1.svg"></v-img>
@@ -10,6 +13,9 @@
             <v-col class="text-center" cols="12" md="4">
                 <v-img src="@/assets/agenda/day3.svg"></v-img>
             </v-col>
+        </v-row>
+        <v-row class="text-center">
+            <v-img src="@/assets/agenda/text.svg" max-height="100" class="d-none d-md-flex"></v-img>
         </v-row>
         <v-row justify="center" align="center">
             <v-col class="text-center" cols="12" md="4">
@@ -28,5 +34,4 @@ export default {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

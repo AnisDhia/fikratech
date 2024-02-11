@@ -2,7 +2,7 @@
   <v-app>
     <NavBar />
     <v-main>
-      <Hero />
+      <Hero/>
       <About />
       <Gdsc />
       <Agenda />
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { NavBar } from './components/Navigation.vue'
+import NavBar from './components/Navigation.vue'
 import Hero from './components/hero/index.vue'
 import About from './components/about/index.vue'
 import Gdsc from './components/gdsc/index.vue'
@@ -42,6 +42,7 @@ export default {
   font-family: 'Mermaid', sans-serif;
 
 }
+
 section {
   padding: 5% 5%;
 }
