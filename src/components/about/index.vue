@@ -15,7 +15,7 @@
 <script>
 import { useDisplay } from 'vuetify/lib/framework.mjs';
 export default {
-    name: 'HeroSection',
+    name: 'AboutSection',
     setup() {
         const { smAndDown } = useDisplay();
         return { smAndDown };

@@ -12,6 +12,7 @@
                 <v-icon size="x-large" color="white" icon="custom:facebook"></v-icon>
             </v-btn>
         </v-row>
+        <h3>© All Rights Reserved For Fikratech 2024.</h3>
     </v-footer>
 </template>
 
@@ -24,5 +25,12 @@ export default {
 <style scoped>
 .v-footer {
     background-image: url(@/assets/grey.png);
+}
+
+h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
 }
 </style>
