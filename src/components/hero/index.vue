@@ -1,12 +1,13 @@
 <template>
     <section>
         <v-parallax src="@/assets/hero/bg.png">
-            <v-img src="@/assets/hero/texture.png" cover>
-                <v-parallax src="@/assets/hero/grid.png">
+            <v-parallax src="@/assets/hero/texture.png" cover>
+                <v-img src="@/assets/hero/grid.png">
                     <v-row justify="space-between" align="center" style="padding: 5% 5%">
                         <v-img src="@/assets/logo.png" :max-width="smAndDown ? 100 : 200"></v-img>
                         <!-- <v-spacer></v-spacer> -->
-                        <v-btn variant="flat" color="#008080" class="text-none px-8 rounded-0" :size="smAndDown ? 'small' : 'large'">Register</v-btn>
+                        <v-btn variant="flat" color="#008080" class="text-none px-8 rounded-0"
+                            :size="smAndDown ? 'small' : 'large'">Register</v-btn>
                     </v-row>
                     <v-row justify="center" class="fill-height">
                         <v-col class="text-center" cols="10" md="5">
@@ -21,13 +22,13 @@
                                     <h3>22,23 and 24 February</h3>
                                 </div>
                                 <v-btn size="x-large" variant="flat" color="#008080"
-                                    class="text-none px-16 rounded-0 mt-6">Register</v-btn>
+                                    class="text-none px-16 rounded-0 mt-6 d-none d-md-flex">Register</v-btn>
                             </v-row>
                         </v-col>
                     </v-row>
                     <v-img src="@/assets/hero/mask.png" class="mask"></v-img>
-                </v-parallax>
-            </v-img>
+                </v-img>
+            </v-parallax>
         </v-parallax>
         <v-img src="@/assets/hero/ellipse2.svg" class="elipse2"></v-img>
     </section>
@@ -69,4 +70,6 @@ h3 {
     /* z-index: 1; */
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {}
 </style>
