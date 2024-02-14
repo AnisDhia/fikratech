@@ -15,12 +15,12 @@
                         <v-col class="text-center" cols="10" md="5">
                             <v-img src="@/assets/hero/logo.png"></v-img>
                             <v-row align="center" justify="center" class="my-8">
-                                <div class="d-flex mx-4">
+                                <div class="d-flex mx-4 my-3 my-md-0">
                                     <v-icon :size="smAndDown ? 'small' : 'large'" class="mr-3"
                                         color="#008080">custom:location</v-icon>
                                     <h3>University Of Constantine 03</h3>
                                 </div>
-                                <div class="d-flex mx-4">
+                                <div class="d-flex mx-4 my-3 my-md-0">
                                     <v-icon :size="smAndDown ? 'small' : 'large'" class="mr-3"
                                         color="#FFD600">custom:clock</v-icon>
                                     <h3>22,23 and 24 February</h3>
