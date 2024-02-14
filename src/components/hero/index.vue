@@ -1,9 +1,9 @@
 <template>
     <section>
-        <v-parallax src="@/assets/hero/bg.png">
+        <v-parallax src="@/assets/hero/bg.png" class="masquito">
             <v-parallax src="@/assets/hero/texture.png" cover>
                 <v-img src="@/assets/hero/grid.png">
-                    <v-row justify="space-between" align="center" style="padding: 5% 5%">
+                    <v-row justify="space-between" align="center" style="padding: 5% 5%" class="content">
                         <v-img src="@/assets/logo.png" :max-width="smAndDown ? 100 : 200"></v-img>
                         <!-- <v-spacer></v-spacer> -->
                         <v-btn variant="flat" color="#008080" class="text-none px-8 rounded-0"
@@ -24,13 +24,17 @@
                                 <v-btn size="x-large" variant="flat" color="#008080"
                                     class="text-none px-16 rounded-0 mt-6 d-none d-md-flex">Register</v-btn>
                             </v-row>
+                            <v-row justify="center" align="center">
+                                <v-img src="@/assets/hero/startedu.png" max-height=""></v-img>
+                                <v-img src="@/assets/hero/gdsc.png" max-height="80"></v-img>
+                            </v-row>
                         </v-col>
                     </v-row>
-                    <v-img src="@/assets/hero/mask.png" class="mask"></v-img>
+                    <!-- <v-img src="@/assets/hero/mask.png" class="mask"></v-img> -->
+                    <!-- <v-img src="@/assets/hero/ellipse2.svg" class="elipse2"></v-img> -->
                 </v-img>
             </v-parallax>
         </v-parallax>
-        <v-img src="@/assets/hero/ellipse2.svg" class="elipse2"></v-img>
     </section>
 </template>
 
@@ -52,6 +56,10 @@ section {
     padding: 0;
 }
 
+.content {
+    z-index: 10;
+}
+
 .mask {
     position: absolute;
     bottom: 0;
@@ -67,9 +75,16 @@ h3 {
     position: absolute;
     top: 0;
     right: 0;
-    /* z-index: 1; */
+    z-index: 0;
     width: 100%;
 }
+
+.masquito {
+    mask :url(@/assets/hero/mask.png);
+    mask-repeat: no-repeat;
+    mask-position: bottom;
+}
+
 
 @media screen and (max-width: 768px) {}
 </style>

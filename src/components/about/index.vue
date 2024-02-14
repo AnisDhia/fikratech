@@ -1,7 +1,7 @@
 <template>
     <section>
         <v-row justify="end" align="center" class="pr-6">
-            <v-img src="@/assets/about/text.svg" :max-width="smAndDown ? 50 : 100"
+            <v-img class="bounce" src="@/assets/about/text.svg" :max-width="smAndDown ? 50 : 100"
                 :max-height="smAndDown ? 50 : 100"></v-img>
         </v-row>
         <v-row justify="center" align="center">
@@ -23,4 +23,5 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

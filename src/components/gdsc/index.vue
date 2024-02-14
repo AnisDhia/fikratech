@@ -15,15 +15,15 @@
                     peer-to-peer learning environment and build solutions for local businesses and their community. -->
                 </p>
                 <div>
-                    <v-btn color="transparent" icon size="x-large" flat href="https://www.instagram.com/gdsc.batna2/"
+                    <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://www.instagram.com/gdsc.batna2/"
                         target="_blank">
                         <v-icon size="x-large" color="#D27849" icon="custom:insta"></v-icon>
                     </v-btn>
-                    <v-btn color="transparent" icon size="x-large" flat href="https://www.linkedin.com/company/gdscbatna2"
+                    <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://www.linkedin.com/company/gdscbatna2"
                         target="_blank">
                         <v-icon size="x-large" color="#D27849" icon="custom:linkedin"></v-icon>
                     </v-btn>
-                    <v-btn color="transparent" icon size="x-large" flat href="https://www.facebook.com/GDSCBatna"
+                    <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://www.facebook.com/GDSCBatna"
                         target="_blank">
                         <v-icon size="x-large" color="#D27849" icon="custom:facebook"></v-icon>
                     </v-btn>

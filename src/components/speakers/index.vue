@@ -1,25 +1,14 @@
 <template>
     <section>
         <v-row class="text-center">
-            <v-img src="@/assets/speakers/text.svg" :max-height="smAndDown ? 100 : 150" class="d-md-none"></v-img>
+            <v-img src="@/assets/speakers/text.svg" :max-height="smAndDown ? 100 : 150" class="bounce"></v-img>
         </v-row>
-        <!-- <v-row justify="center" align="center">
-            <v-col class="text-center" cols="12" md="4">
-                <v-img src="@/assets/speakers/card.svg"></v-img>
-            </v-col>
-            <v-col class="text-center" cols="12" md="4">
-                <v-img src="@/assets/speakers/card.svg"></v-img>
-            </v-col>
-            <v-col class="text-center" cols="12" md="4">
-                <v-img src="@/assets/speakers/card.svg"></v-img>
-            </v-col>
-        </v-row> -->
         <v-row align="center" justify="center">
             <v-col cols="12">
                 <swiper :modules="modules" :slides-per-view="1" :space-between="50" :onSwiper="onSwiper"
                     :onSlideChange="onSlideChange" :pagination="{ clickable: true }" autoplay class="mySwiper">
-                    <swiper-slide v-for="(speaker, index) in 5" :key="index">
-                        <v-img src="@/assets/speakers/card.svg" max-height="300"></v-img>
+                    <swiper-slide v-for="(speaker, index) in speakers" :key="index">
+                        <v-img :src="require('@/assets/speakers/' + speaker.image)" :alt="speaker.name" max-height="60vh"></v-img>
                     </swiper-slide>
                 </swiper>
             </v-col>
@@ -43,9 +32,30 @@ export default {
         Swiper,
         SwiperSlide,
     },
+    data() {
+        return {
+            speakers: [
+                {
+                    name: 'Ahmed Bendjelloul',
+                    title: 'Business',
+                    image: 'speaker1.svg',
+                },
+                {
+                    name: 'Dr Anwar Sekiou',
+                    title: 'Business',
+                    image: 'speaker2.svg',
+                },
+                {
+                    name: 'Meriem Boublia',
+                    title: 'English',
+                    image: 'speaker3.svg',
+                },
+            ],
+        };
+    },
     setup() {
         const onSwiper = (swiper) => {
-            console.log(swiper)
+            swiper;
         };
         const onSlideChange = () => {
             // console.log('slide change')
