@@ -9,10 +9,10 @@
                             <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://www.instagram.com/startedu_dz/" target="_blank">
                                 <v-icon size="x-large" color="white" icon="custom:insta"></v-icon>
                             </v-btn>
-                            <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://anisdhia.me" target="_blank">
+                            <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://www.instagram.com/startedu_dz/" target="_blank">
                                 <v-icon size="x-large" color="white" icon="custom:linkedin"></v-icon>
                             </v-btn>
-                            <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://anisdhia.me" target="_blank">
+                            <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://www.instagram.com/startedu_dz/" target="_blank">
                                 <v-icon size="x-large" color="white" icon="custom:facebook"></v-icon>
                             </v-btn>
                         </v-row>

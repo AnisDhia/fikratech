@@ -23,7 +23,7 @@
                                 <div class="d-flex mx-4 my-3 my-md-0">
                                     <v-icon :size="smAndDown ? 'small' : 'large'" class="mr-3"
                                         color="#FFD600">custom:clock</v-icon>
-                                    <h3>22,23 and 24 February</h3>
+                                    <h3>24 to 28 February</h3>
                                 </div>
                                 <v-btn target="_blank"
                                     href="https://docs.google.com/forms/d/e/1FAIpQLSfErfYRo7Xg4FU1fyZ9M0r0YU1AWGAwiNA9pzKi6J87_BHDkQ/viewform"
