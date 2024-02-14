@@ -2,7 +2,7 @@
     <section>
         <v-row>
             <v-col>
-                <v-img src="@/assets/gdsc/gdsc1.svg" max-width="350"></v-img>
+                <v-img src="@/assets/gdsc/gdsc1.svg" :max-height="smAndDown ? 200 : 350"></v-img>
             </v-col>
             <v-col cols="12" md="" :class="{ 'text-center': smAndDown }">
                 <h1 class="">Who are GDSC Batna?</h1>
@@ -15,18 +15,20 @@
                     peer-to-peer learning environment and build solutions for local businesses and their community. -->
                 </p>
                 <div>
-                    <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://www.instagram.com/gdsc.batna2/"
-                        target="_blank">
+                    <v-btn class="hithere" color="transparent" icon size="x-large" flat
+                        href="https://www.instagram.com/gdsc.batna2/" target="_blank">
                         <v-icon size="x-large" color="#D27849" icon="custom:insta"></v-icon>
                     </v-btn>
-                    <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://www.linkedin.com/company/gdscbatna2"
-                        target="_blank">
+                    <v-btn class="hithere" color="transparent" icon size="x-large" flat
+                        href="https://www.linkedin.com/company/gdscbatna2" target="_blank">
                         <v-icon size="x-large" color="#D27849" icon="custom:linkedin"></v-icon>
                     </v-btn>
-                    <v-btn class="hithere" color="transparent" icon size="x-large" flat href="https://www.facebook.com/GDSCBatna"
-                        target="_blank">
+                    <v-btn class="hithere" color="transparent" icon size="x-large" flat
+                        href="https://www.facebook.com/GDSCBatna" target="_blank">
                         <v-icon size="x-large" color="#D27849" icon="custom:facebook"></v-icon>
                     </v-btn>
+                    <v-img src="@/assets/gdsc/oursocials.svg" class="bounce" max-height="16vh"
+                        style="position: relative; right: smAndDown ? 10% : 12%;"></v-img>
                 </div>
             </v-col>
         </v-row>
