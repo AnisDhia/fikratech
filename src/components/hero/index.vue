@@ -1,8 +1,8 @@
 <template>
     <section>
-        <v-parallax src="@/assets/hero/bg.png" cover>
-            <v-parallax src="@/assets/hero/texture.png" cover>
-                <v-img src="@/assets/hero/grid.png" cover>
+        <v-parallax src="@/assets/hero/bg.png" cover :style="{ height: xs ? '75vh' : 'auto' }">
+            <v-parallax src="@/assets/hero/texture.png" cover :style="{ height: xs ? '75vh' : 'auto' }">
+                <v-img src="@/assets/hero/grid.png" cover :style="{ height: xs ? '75vh' : 'auto' }">
                     <v-row justify="space-between" align="center" style="padding: 5% 5%" class="content">
                         <v-img src="@/assets/logo.png" :max-width="smAndDown ? 100 : 200"></v-img>
                         <!-- <v-spacer></v-spacer> -->
@@ -16,11 +16,13 @@
                             <v-img src="@/assets/hero/logo.png"></v-img>
                             <v-row align="center" justify="center" class="my-8">
                                 <div class="d-flex mx-4">
-                                    <v-icon :size="smAndDown ? 'small' : 'large'" class="mr-3" color="#008080">custom:location</v-icon>
+                                    <v-icon :size="smAndDown ? 'small' : 'large'" class="mr-3"
+                                        color="#008080">custom:location</v-icon>
                                     <h3>University Of Constantine 03</h3>
                                 </div>
                                 <div class="d-flex mx-4">
-                                    <v-icon :size="smAndDown ? 'small' : 'large'" class="mr-3" color="#FFD600">custom:clock</v-icon>
+                                    <v-icon :size="smAndDown ? 'small' : 'large'" class="mr-3"
+                                        color="#FFD600">custom:clock</v-icon>
                                     <h3>22,23 and 24 February</h3>
                                 </div>
                                 <v-btn target="_blank"
@@ -30,7 +32,7 @@
                             </v-row>
                             <v-row justify="center" align="center">
                                 <v-img src="@/assets/hero/startedu.png" max-height=""></v-img>
-                                <v-img src="@/assets/hero/gdsc.png" max-height="80"></v-img>
+                                <v-img src="@/assets/hero/gdsc.png" :max-height="smAndDown ? 50 : 80"></v-img>
                             </v-row>
                         </v-col>
                     </v-row>
@@ -48,8 +50,8 @@ import { useDisplay } from 'vuetify/lib/framework.mjs';
 export default {
     name: 'HeroSection',
     setup() {
-        const { smAndDown } = useDisplay();
-        return { smAndDown };
+        const { smAndDown, xs } = useDisplay();
+        return { smAndDown, xs };
     },
 }
 </script>
@@ -123,9 +125,8 @@ h3 {
     }
 
 
-    
+
 }
 
 
-@media screen and (max-width: 768px) {}
-</style>
+@media screen and (max-width: 768px) {}</style>
