@@ -3,7 +3,7 @@
         <v-parallax src="@/assets/hero/bg.png" cover :style="{ height: xs ? '100vh' : 'auto' }" style="position: relative;">
             <v-parallax src="@/assets/hero/texture.png" cover :style="{ height: xs ? '100vh' : 'auto' }">
                 <v-img src="@/assets/hero/grid.png" cover :style="{ height: xs ? '100vh' : 'auto' }">
-                    <v-row justify="space-between" align="center" style="padding: 5% 5%" class="content">
+                    <v-row justify="space-between" align="center" style="padding: 5% 5%" class="content d-none d-sm-flex">
                         <v-img src="@/assets/logo.png" :max-width="smAndDown ? 100 : 200"></v-img>
                         <!-- <v-spacer></v-spacer> -->
                         <v-btn target="_blank"
@@ -11,7 +11,7 @@
                             variant="flat" color="#008080" class="text-none px-8 rounded-0"
                             :size="smAndDown ? 'small' : 'large'">Register</v-btn>
                     </v-row>
-                    <v-row justify="center" class="fill-height">
+                    <v-row justify="center" class="fill-height mt-14 mt-sm-0">
                         <v-col class="text-center" cols="10" md="5">
                             <v-img src="@/assets/hero/logo.png"></v-img>
                             <div class="">
