@@ -2,7 +2,7 @@
     <v-footer>
         <v-parallax src="@/assets/hero/bg.png" style="height: 60vh;" class="mask">
             <v-parallax src="@/assets/hero/texture.png" style="height: 100%;">
-                <v-img src="@/assets/hero/grid.png" style="height: 100%;">
+                <v-img src="@/assets/hero/grid.png" style="height: 100%;" cover>
                     <div style="position: absolute; bottom: 0; right: 0; left:0; padding-bottom: 1%;">
                         <v-img src="@/assets/logo.png" max-height="53px"></v-img>
                         <v-row justify="center" align="center" class="text-center mt-16 mb-3">

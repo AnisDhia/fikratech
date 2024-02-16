@@ -1,8 +1,8 @@
 <template>
     <section>
-        <v-parallax src="@/assets/hero/bg.png" cover :style="{ height: xs ? '75vh' : 'auto' }">
-            <v-parallax src="@/assets/hero/texture.png" cover :style="{ height: xs ? '75vh' : 'auto' }">
-                <v-img src="@/assets/hero/grid.png" cover :style="{ height: xs ? '75vh' : 'auto' }">
+        <v-parallax src="@/assets/hero/bg.png" cover :style="{ height: xs ? '100vh' : 'auto' }" style="position: relative;">
+            <v-parallax src="@/assets/hero/texture.png" cover :style="{ height: xs ? '100vh' : 'auto' }">
+                <v-img src="@/assets/hero/grid.png" cover :style="{ height: xs ? '100vh' : 'auto' }">
                     <v-row justify="space-between" align="center" style="padding: 5% 5%" class="content">
                         <v-img src="@/assets/logo.png" :max-width="smAndDown ? 100 : 200"></v-img>
                         <!-- <v-spacer></v-spacer> -->
@@ -14,7 +14,7 @@
                     <v-row justify="center" class="fill-height">
                         <v-col class="text-center" cols="10" md="5">
                             <v-img src="@/assets/hero/logo.png"></v-img>
-                            <v-row align="center" justify="center" class="my-8">
+                            <v-row align="center" justify="center" class="mt-8">
                                 <div class="d-flex mx-4 my-3 my-md-0">
                                     <v-icon :size="smAndDown ? 'small' : 'large'" class="mr-3"
                                         color="#008080">custom:location</v-icon>
@@ -23,23 +23,27 @@
                                 <div class="d-flex mx-4 my-3 my-md-0">
                                     <v-icon :size="smAndDown ? 'small' : 'large'" class="mr-3"
                                         color="#FFD600">custom:clock</v-icon>
-                                    <h3>25 to 28 February</h3>
+                                    <h3>24 to 28 February</h3>
                                 </div>
                                 <v-btn target="_blank"
                                     href="https://docs.google.com/forms/d/e/1FAIpQLSfErfYRo7Xg4FU1fyZ9M0r0YU1AWGAwiNA9pzKi6J87_BHDkQ/viewform"
                                     size="x-large" variant="flat" color="#008080"
                                     class="text-none px-16 rounded-0 mt-6 d-none d-md-flex">Register</v-btn>
                             </v-row>
-                            <v-row justify="center" align="center">
+                            <v-img src="@/assets/hero/logos.png" :max-height="smAndDown ? 50 : 80" class="mt-16"></v-img>
+                            <!-- <v-row justify="center" align="center">
                                 <v-img src="@/assets/hero/startedu.png" max-height=""></v-img>
                                 <v-img src="@/assets/hero/gdsc.png" :max-height="smAndDown ? 50 : 80"></v-img>
-                            </v-row>
+                            </v-row> -->
                         </v-col>
                     </v-row>
                     <!-- <v-img src="@/assets/hero/mask.png" class="mask"></v-img> -->
-                    <!-- <v-img src="@/assets/hero/ellipse2.svg" class="elipse2"></v-img> -->
                 </v-img>
             </v-parallax>
+            <!-- <v-img src="@/assets/hero/e1.svg" class="elipse1"/> -->
+
+            <!-- <v-img src="@/assets/hero/e2.svg" class="elipse2"></v-img> -->
+            <!-- <v-img src="@/assets/hero/e3.svg" class="elipse3"></v-img> -->
         </v-parallax>
     </section>
 </template>
@@ -77,12 +81,28 @@ h3 {
     color: white;
 }
 
+.elipse1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* z-index: 0; */
+    width: 100%;
+}
+
 .elipse2 {
     position: absolute;
     top: 0;
     right: 0;
     z-index: 0;
-    width: 100%;
+    /* width: 100%; */
+}
+
+.elipse3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    /* width: 100%; */
 }
 
 .masquito {
@@ -129,4 +149,5 @@ h3 {
 }
 
 
-@media screen and (max-width: 768px) {}</style>
+@media screen and (max-width: 768px) {}
+</style>

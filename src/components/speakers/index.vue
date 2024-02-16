@@ -8,7 +8,8 @@
                 <swiper :modules="modules" :slides-per-view="1" :space-between="50" :onSwiper="onSwiper"
                     :onSlideChange="onSlideChange" :pagination="{ clickable: true }" autoplay class="mySwiper">
                     <swiper-slide v-for="(speaker, index) in speakers" :key="index">
-                        <v-img :src="require('@/assets/speakers/' + speaker.image)" :alt="speaker.name" max-height="60vh"></v-img>
+                        <v-img :src="require('@/assets/speakers/' + speaker.image)" :alt="speaker.name"
+                            max-height="60vh"></v-img>
                     </swiper-slide>
                 </swiper>
             </v-col>
@@ -36,19 +37,24 @@ export default {
         return {
             speakers: [
                 {
-                    name: 'Ahmed Bendjelloul',
-                    title: 'Business',
+                    name: 'Pius Sunday Ojwo',
+                    title: 'GDG Constantine Lead',
                     image: 'speaker1.svg',
                 },
                 {
-                    name: 'Dr Anwar Sekiou',
+                    name: 'Ahmed Bendjelloul',
                     title: 'Business',
                     image: 'speaker2.svg',
                 },
                 {
+                    name: 'Dr Anwar Sekiou',
+                    title: 'Business',
+                    image: 'speaker3.svg',
+                },
+                {
                     name: 'Meriem Boublia',
                     title: 'English',
-                    image: 'speaker3.svg',
+                    image: 'speaker4.svg',
                 },
             ],
         };
