@@ -53,8 +53,13 @@ export default {
                 },
                 {
                     name: 'Meriem Boublia',
-                    title: 'English',
+                    title: 'English Teacher',
                     image: 'speaker4.svg',
+                },
+                {
+                    name: 'Mohamed Chérif Gharbi',
+                    title: 'Full Stack Web Developer',
+                    image: 'speaker5.svg',
                 },
             ],
         };
