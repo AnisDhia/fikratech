@@ -1,6 +1,6 @@
 <template>
     <section>
-        <v-parallax src="@/assets/hero/bg.png" cover :style="{ height: xs ? '100vh' : 'auto' }" style="position: relative;">
+        <v-parallax src="@/assets/hero/bg.png" cover :style="{ height: xs ? '100vh' : 'auto' }" style="position: relative;" class="inverted">
             <v-img src="@/assets/hero/e1.svg" class="elipse1" />
             <v-img src="@/assets/hero/e2.svg" class="elipse2" />
             <v-img src="@/assets/hero/e3.svg" class="elipse3" />

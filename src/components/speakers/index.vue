@@ -83,4 +83,12 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+
+@media screen and (max-width: 600px) {
+   section {
+    margin-top: 40%;
+   }
+    
+}
+</style>
