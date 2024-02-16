@@ -3,9 +3,9 @@
         <v-row align="center" class="d-block d-md-flex">
             <!-- <vid> -->
             <v-img v-if="!smAndDown" src="@/assets/gdsc/gdscbatna.svg" max-width="30vw" max-height="45vh"></v-img>
-            <v-img v-else src="@/assets/gdsc/gdsc.svg" max-height="130"></v-img>
+            <v-img v-else src="@/assets/gdsc/gdsc.svg" max-height="20vh"></v-img>
             <!-- </vid> -->
-            <div class="mb-0 mb-lg-16" :class="{ 'text-center': smAndDown }">
+            <div class="mb-0 mb-md-6 mb-lg-16" :class="{ 'text-center': smAndDown }">
                 <h1 class="mb-3">Who are <span style="color: #4385F3;">G</span><span style="color: #E94436;">D</span><span
                         style="color: #FABC05;">S</span><span style="color: #109D58;">C</span> Batna?</h1>
                 <p>
