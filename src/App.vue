@@ -81,7 +81,12 @@ section {
     margin-top: 10%;
   }
 
+  section {
+    margin-top: 10%;
+  }
+
 }
+
 
 .swiper-pagination-bullet {
   opacity: 1;
@@ -148,4 +153,5 @@ section {
   100% {
     transform: scale(1);
   }
-}</style>
+}
+</style>
