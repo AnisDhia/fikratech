@@ -61,6 +61,11 @@ export default {
                     title: 'Full Stack Web Developer',
                     image: 'speaker5.svg',
                 },
+                {
+                    name: 'Ahmed Mounir Guerzize',
+                    title: 'UI/UX & Motion graphic designer and Freelancer',
+                    image: 'speaker6.svg',
+                },
             ],
         };
     },
