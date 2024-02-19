@@ -26,6 +26,7 @@ import Speakers from './components/speakers/index.vue'
 import Agenda from './components/agenda/index.vue'
 import Footer from './components/Footer.vue'
 
+
 export default {
   name: 'App',
 
@@ -41,7 +42,7 @@ export default {
 
   data: () => ({
     fab: null,
-    
+
   }),
   created() {
     console.log("\n\n\tDeveloped by Anis Dhia\n\t https://anisdhia.me\n\n");
