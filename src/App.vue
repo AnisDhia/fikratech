@@ -1,6 +1,11 @@
 <template>
   <v-app>
     <!-- <NavBar /> -->
+    <v-scale-transition>
+      <v-btn icon="mdi-chevron-up" v-show="fab" v-scroll="onScroll" color="#008080" class="mb-4" @click="toTop"
+        style="position: fixed; bottom: 0; right: 5%; z-index: 9999;">
+      </v-btn>
+    </v-scale-transition>
     <v-main>
       <Hero />
       <About />
@@ -35,10 +40,22 @@ export default {
   },
 
   data: () => ({
-    //
+    fab: null,
+    
   }),
   created() {
     console.log("\n\n\tDeveloped by Anis Dhia\n\t https://anisdhia.me\n\n");
+  },
+  methods: {
+    onScroll(e) {
+      if (typeof window === "undefined") return;
+      const top = window.scrollY || e.target.scrollTop || 0;
+      this.fab = top > 60;
+    },
+    toTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      // this.$vuetify.goTo(0);
+    },
   }
 }
 </script>
